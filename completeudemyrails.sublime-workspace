@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"article_pa",
+				"article_path"
+			],
+			[
 				"user",
 				"user2〔variable〕"
 			],
@@ -16,10 +20,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/article.rb",
+			"file": "app/controllers/articles_controller.rb",
 			"settings":
 			{
-				"buffer_size": 177,
+				"buffer_size": 986,
 				"line_ending": "Unix"
 			}
 		}
@@ -69,6 +73,8 @@
 		"/Users/torpekc/Desktop/alpha-blog/app",
 		"/Users/torpekc/Desktop/alpha-blog/app/controllers",
 		"/Users/torpekc/Desktop/alpha-blog/app/views",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/layouts",
 		"/Users/torpekc/Desktop/alpha-blog/app/views/pages",
 		"/Users/torpekc/Desktop/alpha-blog/config",
 		"/Users/torpekc/Desktop/alpha-blog/db",
@@ -76,14 +82,23 @@
 	],
 	"file_history":
 	[
+		"/Users/torpekc/Desktop/alpha-blog/app/views/layouts/_messages.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles/index.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/pages/home.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/models/article.rb",
+		"/Users/torpekc/Desktop/alpha-blog/config/routes.rb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles/new.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles/_form.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles/edit.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/layouts/application.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles/show.html.erb",
+		"/Users/torpekc/Desktop/alpha-blog/app/views/articles/update.html.erb",
 		"/Users/torpekc/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/torpekc/Desktop/alpha-blog/db/migrate/20161203122438_add_description_to_articles.rb",
 		"/Users/torpekc/Desktop/alpha-blog/db/schema.rb",
 		"/Users/torpekc/Desktop/alpha-blog/db/migrate/20161203121840_create_articles.rb",
-		"/Users/torpekc/Desktop/alpha-blog/app/views/pages/home.html.erb",
 		"/Users/torpekc/Desktop/alpha-blog/app/controllers/pages_controller.rb",
 		"/Users/torpekc/Desktop/alpha-blog/app/views/pages/about.html.erb",
-		"/Users/torpekc/Desktop/alpha-blog/config/routes.rb",
 		"/Users/torpekc/Desktop/alpha-blog/app/controllers/welcome_controller.rb",
 		"/Users/torpekc/Desktop/alpha-blog/app/controllers/application_controller.rb",
 		"/Users/torpekc/Desktop/alpha-blog/app/views/welcome/home.html",
@@ -183,19 +198,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/article.rb",
+					"file": "app/controllers/articles_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 177,
+						"buffer_size": 986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								117,
+								117
 							]
 						],
 						"settings":
@@ -208,15 +223,15 @@
 								{
 									"1":
 									[
-										174,
-										177
+										117,
+										118
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/dot.png",
+										"Packages/BracketHighlighter/icons/square_bracket.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -224,8 +239,8 @@
 								{
 									"1":
 									[
-										0,
-										5
+										85,
+										86
 									]
 								},
 								"unmatched":
@@ -293,8 +308,8 @@
 							"open_with_edit": true,
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
 						},
-						"translation.x": 21.0,
-						"translation.y": 0.0,
+						"translation.x": 132.0,
+						"translation.y": 10.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
