@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'pages#home'
   get 'about' => 'pages#about'
+  get 'signup', to: 'users#new'
+
+  # post 'users', to: 'users#create' or
+  resources :users, except: [:new]
 
 
   resources :articles
