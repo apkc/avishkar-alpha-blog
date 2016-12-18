@@ -1,4 +1,4 @@
-<h1 align="center">Show page</h1>
-<div class="col-md-6 col-md-offset-3">
-  <h1><%= @category.name %></h1>
-</div>
+<h1 align="center"><%= "Category: " + @category.name %></h1>
+  
+<%= render 'articles/article', obj: @category_articles %>
+<div align="center"><%= will_paginate @category_articles %></div>
