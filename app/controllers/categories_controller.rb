@@ -8,6 +8,11 @@ class CategoriesController < ApplicationController
     @category=Category.new
   end
 
+  def show
+    @category = Category.find(params[:id])
+    @category_articles = @category.articles.paginate(page: params[:page], per_page: 5)
+  end
+
   def create
     @category = Category.new(category_params)
     if @category.save
@@ -19,10 +24,21 @@ class CategoriesController < ApplicationController
 
   end
 
-  def show
-    @category = Category.find(params[:id])
-    @category_articles = @category.articles.paginate(page: params[:page], per_page: 5)
+  def edit
+    @category=Category.find(params[:id])
   end
+
+  def update
+    @category=Category.find(params[:id])
+    if @category.update(category_params)
+      flash[:success]="Category updated successfully!"
+      redirect_to category_path(@category)
+    else
+      flash.now[:danger]="Only Admins are allowed!"
+      render 'new'
+    end
+  end
+  
 
   private
   def category_params
@@ -31,7 +47,7 @@ class CategoriesController < ApplicationController
 
   def require_admin
     if !logged_in? || (logged_in? and !current_user.admin?)
-      flash[:danger]="Only logged in admin users can create categories!"
+      flash[:danger]="Only logged in admin users are allowed!"
       redirect_to categories_path
     end
   end
